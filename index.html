@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h2>Student Management</h2>
+
+    <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter Name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter Age" required>
+
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" placeholder="Enter Grade" required>
+
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h3>Student List</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+    </table>
+</body>
+</html>
